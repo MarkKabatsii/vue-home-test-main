@@ -1,0 +1,107 @@
+@import './variables.scss';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+body {
+  color: $primary-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $primary-font;
+  color: $title-color;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 9px;
+  position: relative;
+  font-weight: 300;
+  line-height: 51.3px;
+  margin-top: 35px;
+}
+
+h2 {
+  font-family: $secondary-font;
+  font-weight: $fw-medium;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5.6px;
+  line-height: $text-height;
+  font-size: $f-size-28;
+  position: relative;
+  z-index: 1;
+}
+
+h2:before{
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 154px;
+  height: 46px;
+  background-color: #f9dfdf;
+  transform: translate(-104%);
+  z-index: -1;
+}
+
+h3 {
+  font-family: $secondary-font;
+  font-weight: $fw-bold;
+  font-size: $f-size-28;
+  color: $title-color;
+  letter-spacing: 0.7px;
+  line-height: $text-height;
+}
+
+h5 {
+  font-family: $secondary-font;
+  font-weight: $fw-medium;
+  color: $secondary-color;
+  text-transform: uppercase;
+  font-size: $f-size-15;
+  letter-spacing: .38px;
+  line-height: 11px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 18px 0 19px 0;
+  background: $bg-linear;
+  color: #fff;
+  font-family: $secondary-font;
+  font-weight: $fw-bold;
+  box-shadow: 0 1px 3px 0 rgba(7, 7, 8, 0.46);
+  font-size: $f-size-18;
+  letter-spacing: .45px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background: $bg-linear-reverse;
+}
+
+.btn-secondary {
+  padding: 0;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid #d5d5d5;
+  background: linear-gradient(#fff, #f7fcfb);
+  color: #000;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-secondary:hover{
+  transform: scale(1.2);
+  outline: none;
+}
+
+select {
+  outline: none;
+}
